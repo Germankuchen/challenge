@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "45cba746-eb1a-43a8-8474-0b5701856172",
+		"name": "mavha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listings: Agregar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Black Raven\",\n\"description\": \"Morbi porttitor lorem id ligula. Suspendisse ornare consequ\",\n\"adults\": 3,\n\"children\": 2,\n\"is_pets_allowed\": true,\n\"base_price\": 195.62,\n\"cleaning_fee\": 95.82,\n\"image_url\": \"http://dummyimage.com/126x173.bmp/cc0000/ffffff\",\n\"weekly_discount\": 0.77,\n\"monthly_discount\": 0.61\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listings: Obtener",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listings: Obtener by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings/d290f1ee-6c54-4b01-90e6-d701748f0851",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings",
+						"d290f1ee-6c54-4b01-90e6-d701748f0851"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listings: Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Black Raven\",\n\"description\": \"Morbi porttitor lorem id ligula. Suspendisse ornare consequ\",\n\"adults\": 4,\n\"children\": 2,\n\"is_pets_allowed\": true,\n\"base_price\": 195.62,\n\"cleaning_fee\": 95.82,\n\"image_url\": \"http://dummyimage.com/126x173.bmp/cc0000/ffffff\",\n\"weekly_discount\": 0.77,\n\"monthly_discount\": 0.61\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings/d290f1ee-6c54-4b01-90e6-d701748f0851",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings",
+						"d290f1ee-6c54-4b01-90e6-d701748f0851"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listings: Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings/d290f1ee-6c54-4b01-90e6-d701748f0851",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings",
+						"d290f1ee-6c54-4b01-90e6-d701748f0851"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PrecioEspecial: Agregar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"date\": \"2019-12-06\",\n\"price\": 95.82\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings/d290f1ee-6c54-4b01-90e6-d701748f0851/special-prices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings",
+						"d290f1ee-6c54-4b01-90e6-d701748f0851",
+						"special-prices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PrecioEspecial: Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings/d290f1ee-6c54-4b01-90e6-d701748f0851/special-prices/d290f1ee-6c52-4b02-90e6-d701748f9854",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings",
+						"d290f1ee-6c54-4b01-90e6-d701748f0851",
+						"special-prices",
+						"d290f1ee-6c52-4b02-90e6-d701748f9854"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"checkin\": \"2020-12-01\",\n\"checkout\": \"2020-12-10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/challenge/api/listings/d290f1ee-6c54-4b01-90e6-d701748f0851/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"api",
+						"listings",
+						"d290f1ee-6c54-4b01-90e6-d701748f0851",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
